@@ -1,0 +1,1 @@
+document.getElementById('gifts').setAttribute('min-height',document.body.clientHeight);

@@ -1,0 +1,142 @@
+$color-A5: #a5a5a5;
+$color-B2: #b2b2b2;
+$color-Back: #f9f9f8;
+$color-Border: #dedecf;
+$color-FF: #ff0001;
+$color-F9: #f9f9f8;
+$color-51: #5171b0;
+$size9: 0.9rem;
+$size8: 0.8rem;
+$size7: 0.7rem;
+$size6: 0.6rem;
+$size5: 0.5rem;
+$size4: 0.4rem;
+$size3: 0.3rem;
+$size2: 0.2rem;
+$size75: 0.75rem;
+$size45: 0.45rem;
+$size35: 0.35rem;
+h4,h5 {
+  font-weight: normal;
+}
+%clear {
+  display: block;
+  zoom: 1;
+  overflow: hidden;
+}
+.acquire-gift {
+  padding-top: 98%;
+}
+.acquire-gift:before {
+  content: ' ';
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #fff url('../image/gifts-img-bg.jpg') no-repeat center top;
+  background-size: contain;
+}
+.gifts-header {
+  position: relative;
+  padding-top: $size4;
+  padding-bottom: $size9 * 2;
+  background-color: #fff;
+  text-align: center;
+  h4 {
+    font-size: $size9;
+    padding-top: $size9;
+  }
+  h5 {
+    font-size: $size75;
+  }
+  p {
+    font-size: $size6;
+    color: $color-A5;
+    padding-top: $size4;
+  }
+}
+.gifts-top {
+  position: absolute;
+  top: -2rem;
+  left: 0;
+  width: 100%;
+  height: $size2 * 10;
+  background: url('../image/gifts-img-white.png') no-repeat center top;
+  background-size: 100% auto;
+  text-align: center;
+  img {
+    width: $size35 * 10;
+    margin-top: -1.75rem;
+    border-radius: 50%;
+  }
+}
+.gifts-content {
+  padding: 0 $size9 1rem;
+  background-color: $color-Back;
+  text-align: center;
+  p {
+    font-size: $size6;
+    color: $color-A5;
+    padding-top: $size45;
+  }
+  p:first-of-type {
+    padding-bottom: $size9;
+    text-align: left;
+  }
+  input {
+    width: 100%;
+    height: $size2 * 10;
+    font-size: $size6;
+    background-color: #fff;
+    border: 1px solid $color-Border;
+    border-radius: 0.125rem;
+    text-align: center;
+  }
+  input:not(:last-of-type) {
+    margin-bottom: 0.25rem;
+  }
+  a,button {
+    display: inline-block;
+    width: 8.4rem;
+    height: 2.225rem;
+    margin-top: $size6 * 2;
+    background: url('../image/gifts-button.png') no-repeat center;
+    background-size: 8.4rem auto;
+  }
+}
+.gifts-list {
+  li {
+    @extend %clear;
+    position: relative;
+    padding: $size6 $size8;
+    border-top: 1px solid $color-Border;
+    img {
+      float: left;
+      width: $size5 * 4;
+      vertical-align: middle;
+    }
+    p {
+      font-size: $size7;
+      padding-left: $size5 * 4 + 0.725rem;
+      span:last-of-type {
+        margin-left: $size5 * 2;
+      }
+    }
+    p:nth-of-type(2) {
+      font-size: $size6;
+      color: $color-B2;
+      padding-top: $size5;
+    }
+    p:last-of-type {
+      position: absolute;
+      top: 50%;
+      right: $size8;
+      margin-top: -0.5rem;
+    }
+    p:not(:last-of-type) {
+      padding-right: $size5 * 10;
+    }
+  }
+}
